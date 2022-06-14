@@ -1,9 +1,40 @@
-head {
+@media(min-width:750px){
+
+
+.head {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #1f2937;
+    color:#f9faf8;
     
 }
-.header1 {
-    color: #f9faf8;
+.header {
     font-size: 24px;
+    order: start;
+}
+.upper_section {
+    padding: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:#1f2937;
+    color:#f9faf8;
+}
+.Hero text {
+    flex-direction: column;
+    font-size: 48px;
+    font-weight: bold;
+}
+.image {
+    
+    border-radius: 8px;
+    width: 100%;
+    object-fit: scale-down;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
 
 }
