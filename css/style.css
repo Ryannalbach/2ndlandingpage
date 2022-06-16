@@ -53,14 +53,20 @@
     font-size: 48px;
     font-weight: 700;
     display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    text-shadow: grey, 1 1 0;
 }
 .sentence {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
     margin-left: 200px;
     width: 250px;
-    height: 250px;
+    height: 142px;
     padding-right: 25px;
     font-size: 18px;
 
@@ -72,7 +78,7 @@
     border-radius: 8px;
     flex-direction: row;
     justify-content: center;
-    align-content:flex-start;
+    
     background-color: #3882f6;
     color:#f9faf8;
     font-size: 24px;
@@ -84,11 +90,14 @@
 }
 .b1:hover{
     width: 150px;
-    height: 50px;
+    height: 55px;
     box-shadow: black, 1 1 0;
 }
 .image-container {
     display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
     border-radius: 8px;
     max-width: 100%;
     height: 100%;
@@ -97,7 +106,14 @@
     flex-direction: row;
     align-items: flex-end;
     
-
+}
+.img1{
+    width: 736px;
+    height: 491px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 .middle_section_container{
     display: flex;
@@ -106,12 +122,14 @@
     align-items: center;
 }
 .middle_section{
-    gap: 5px;
+    
     margin: 7%;
     width: 1000px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    border-width: 5px;
+    border-color:#3882f6;
 
     
     
@@ -132,13 +150,9 @@
 .middleboxes {
     width: 100px;
     height: 100px;
-    margin: 1%;
     display: flex;
-    align-content: space-around;
     border-radius: 10px;
-    background-color: #E5E7Eb;
-    border-color:#3882f6;
-    border-width: 10px;
+    
     transition: 0.5s;
     cursor: pointer;
 }
@@ -148,13 +162,29 @@
 .middleboxes:hover {
     width: 250px;
     height: 250px;
+    border-radius: 12px;
 }
 .boxcontainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-shrink: 1;
+    width: 100px;
+    height: 100px;
     justify-content: space-evenly;
-    margin-top: 30px;
+    border-radius: 8px;
+    border-width: 5px;
+    border-color:#3882f6;
+    transition: 0.5s;
 
+}
+.boxcontainer:hover{
+    width: 250px;
+    height: 250px;
+}
+.boximage{
+    border-radius: 8px;
+    border-width: 2px;
+    border-color:#3882f6;
 }
 .boxtext{
     color:#1f2937;
@@ -205,6 +235,11 @@
     justify-content: center;
     text-align:center;
     color: #E5E7Eb;
+    transition: 0.5s;
+}
+.button:hover{
+    width: 150px;
+    height: 50px;
 }
 .footer {
     background-color: #1f2937;
