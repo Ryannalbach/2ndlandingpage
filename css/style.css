@@ -25,6 +25,18 @@
     font-weight: 600;
     order: start;
 }
+.link1{
+    transition: 0.5s;
+}
+.link1:hover{
+    font-size: 20px;
+}
+.link2{
+    transition: 0.5s;
+}
+.link2:hover{
+    font-size: 20px;
+}
 .link3 {
     margin-right: 100px;
     transition: 0.5s;
@@ -106,6 +118,7 @@
     flex-direction: row;
     align-items: flex-end;
     
+    
 }
 .img1{
     width: 736px;
@@ -114,6 +127,7 @@
     flex-wrap: wrap;
     flex-grow: 1;
     flex-shrink: 1;
+    min-width: 0;
 }
 .middle_section_container{
     display: flex;
@@ -260,6 +274,7 @@
 .nav-list{
     display: flex;
     gap: 1rem;
+    justify-content: space-between;
 
 }
 .nav-list li {
@@ -276,5 +291,6 @@
     justify-content:flex-end;
     flex-direction:column;
     align-self: center;
+    margin-top: 18px;
 }
 }
